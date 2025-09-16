@@ -6,7 +6,7 @@ class HomePageLocators:
     # Header elements
     YANDEX_LOGO = (By.XPATH, ".//a[@class='Header_LogoYandex__3TSOI']")
     SCOOTER_LOGO = (By.XPATH, ".//a[@class='Header_LogoScooter__3lsAR']")
-    HEADER_ORDER_BUTTON = (By.XPATH, "(.//button[text()='Заказать'])[1]")
+    HEADER_ORDER_BUTTON = (By.XPATH, "//button[@class='Button_Button__ra12g']")
     ORDER_STATUS_BUTTON = (By.XPATH, ".//button[text()='Статус заказа']")
     ORDER_NUMBER_INPUT = (By.XPATH, ".//input[@class='Input_Input__1iN_Z Header_Input__xIoUq']")
     GO_BUTTON = (By.XPATH, ".//button[text()='Go!']")
@@ -14,7 +14,7 @@ class HomePageLocators:
 
     # Main page elements
     PAGE_TITLE = (By.XPATH, ".//div[@class='Home_Header__iJKdX']")
-    MAIN_ORDER_BUTTON = (By.XPATH, "(//button[text()='Заказать'])[2]")
+    MAIN_ORDER_BUTTON = (By.XPATH, "(//button[@class='Button_Button__ra12g Button_Middle__1CSJM']")
     ACCEPT_COOKIES_BUTTON = (By.XPATH, "//button[@id='rcc-confirm-button']")
     FAQ_SECTION_TITLE = (By.XPATH, "//div[text()='Вопросы о важном']")
 
@@ -25,3 +25,4 @@ class HomePageLocators:
     @staticmethod
     def get_answer_locator(question_index: int):
         return (By.ID, f"accordion__panel-{question_index}")
+    

@@ -1,5 +1,7 @@
+# data.py
 from dataclasses import dataclass
 from typing import List
+from urls import URL 
 
 @dataclass
 class UserData:
@@ -31,12 +33,6 @@ class TestUsers:
         delivery_date='01.09.2025',
         comment='Тестовый комментарий 2'
     )
-
-class URL:
-    DZEN = "https://dzen.ru/?yredirect=true"
-    QA_SCOOTER_MAIN = "https://qa-scooter.praktikum-services.ru/"
-    QA_SCOOTER_ORDER = "https://qa-scooter.praktikum-services.ru/order"
-    QA_SCOOTER_TRACK = "https://qa-scooter.praktikum-services.ru/track"
 
 class ExpectedAnswers:
     FAQ_ANSWERS = [

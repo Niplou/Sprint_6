@@ -1,7 +1,7 @@
 import allure
 from locators.order_page_locators import OrderPageLocators
 from pages.base_page import BasePage
-from helps.data import UserData
+from data.data import UserData
 
 class OrderPage(BasePage):
 
